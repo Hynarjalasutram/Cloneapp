@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(11, 76, 76);
+    
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: white;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+.nav>img{
+    margin-left: 40px;
+}
+.menu>ul{
+    display: flex;
+    top: 40%;
+    left: 26%;
+   position: absolute;
+}
+.menu>ul>li{
+    margin: 0px 12px;
+    font-size: 18px;
+}
+
+.icon{
+    position: relative;
+    display: none;
+    right: 90px;
+}
+.icon>img{
+    max-height: 20px;
+    position: relative;
+    
+}
+.iconnames{
+    background-color: azure;
+    text-align: center;
+    width: auto;
+    position: absolute;
+    height: 47vh;
+}
+.iconnames>ul>li{
+    margin: 10px;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+}
+.middle{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.drop{
+    display: flex;
+}
+.drop>i,.drop>h4,.line{
+    margin-left: 3px;
+}
+.line{
+    border-bottom: 1px solid black;
+    width: 88%;
+    height: auto;
+}
+.para{
+    margin-top: 10px;
+    text-align: justify;
+    display: none;
+    top: 0px;
+    height: 0%;
+}
+.drop:hover{
+    color: aqua;
+}
+.drop:hover i{
+    transform: rotate(45deg);
+}
+.middle:hover .para{
+    display: block;
+    transition: all 2s;
+    top: 0px;
+    height: 100%;
+}
+.con{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+.bottom{
+    position: absolute;
+    top: 18rem;
+    left: 20%;
+    height: auto;
+    width: 65%;
+    margin-bottom: 30px;
+}
+.bottom img{
+    height: 60vh;
+    width: 80%;
+}
+.left{
+    position: absolute;
+    top: 13rem;
+    left: 0px;
+    color: white;
+}
+.right{
+    position: absolute;
+    color: white;
+    right: 175px;
+    top: 13rem;
+
+}
+.dots{
+    position: absolute;
+    bottom: 0px;
+    left: 34%;
+    margin-bottom: 20px;
+    color: white;
+}
+@media screen and (max-width:900px){
+    .menu>ul{
+        display:none;
+    }
+    .icon{
+        display: block;
+    }
+    .iconnames{
+        display: none;
+    }
+    .icon:hover .iconnames{
+        display: block;
+
+    }
+    .middle{
+        font-size: 10px;
+    }
+    .line{
+        width: 85%;
+    }
+}
